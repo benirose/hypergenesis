@@ -8,7 +8,7 @@ set -e
 
 brewInstalls=(git grc brew-cask coreutils ack findutils gnu-tar tmux htop-osx ctags nginx gnu-sed mobile-shell nmap tree wget watch phantomjs macvim)
 
-dotfiles_repo='git@github.com:mattmcmanus/dotfiles.git'
+dotfiles_repo='git@github.com:benirose/dotfiles.git'
 dotfiles_location="$HOME/.dotfiles"
 
 nodeVersion='0.10'
