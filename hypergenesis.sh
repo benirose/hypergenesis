@@ -78,7 +78,7 @@ echo ""
 [[ ! $(which brew) ]] &&
 (
   #log "Installing Homebrew"
-  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew doctor
 ) || log "Homebrew already installed. Updating and installing apps"
 
