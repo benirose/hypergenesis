@@ -6,7 +6,7 @@ set -e
 #             Configuration
 # - - - - - - - - - - - - - - - - - - - - - -
 
-brewInstalls=(git grc brew-cask coreutils ack findutils gnu-tar tmux htop-osx ctags nginx gnu-sed mobile-shell nmap tree wget watch phantomjs macvim)
+brewInstalls=(git grc brew-cask coreutils ack findutils gnu-tar tmux htop-osx ctags nginx gnu-sed nmap tree wget watch phantomjs)
 
 dotfiles_repo='git@github.com:benirose/dotfiles.git'
 dotfiles_location="$HOME/.dotfiles"
@@ -15,10 +15,10 @@ nodeVersion='0.10'
 rubyVersion='2.0'
 
 # Node apps to npm install -g
-nodeGlobalModules=(jsontool node-dev express jade bunyan grunt-cli)
+nodeGlobalModules=(jsontool node-dev express-generator jade bunyan grunt-cli apostrophe-cli ummon)
 
 # Apps to install
-brewCaskInstalls=(alfred google-chrome google-hangouts transmission fluid virtualbox vagrant onepassword dropbox sublime-text evernote firefox iterm2 arq vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package)
+brewCaskInstalls=(alfred google-chrome google-hangouts transmission fluid virtualbox vagrant onepassword dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
 
 #
 #     Functions make things easier!
