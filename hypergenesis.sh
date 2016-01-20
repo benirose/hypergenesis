@@ -18,7 +18,7 @@ rubyVersion='2.0'
 nodeGlobalModules=(jsontool node-dev express-generator jade bunyan grunt-cli apostrophe-cli ummon)
 
 # Apps to install
-brewCaskInstalls=(alfred google-chrome google-hangouts transmission fluid virtualbox vagrant onepassword dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
+brewCaskInstalls=(alfred transmission fluid virtualbox vagrant dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
 
 #
 #     Functions make things easier!
@@ -82,10 +82,10 @@ echo ""
   brew doctor
 ) || log "Homebrew already installed. Updating and installing apps"
 
-[[ ! $(brew tap | grep "phinze/homebrew-cask") ]] &&
+[[ ! $(brew tap | grep "caskroom/cask") ]] &&
 (
   log "brew tap $app"
-  brew tap phinze/homebrew-cask
+  brew tap caskroom/cask
 )
 
 brew update
@@ -122,10 +122,11 @@ qlmanage -r
 [ ! -d $HOME/.nvm ] &&
 (
   log "Installing NVM"
-  curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+  brew install nvm
+  mkdir $HOME/.nvm
   source ~/.bash_profile
   nvm install $nodeVersion
-  nvm alias default 0.10
+  nvm alias default $nodeVersion
 ) || log "NVM already installed. Installing apps..."
 
 source ~/.bash_profile
@@ -145,6 +146,8 @@ done
   curl -L https://get.rvm.io | bash -s stable --ruby=$rubyVersion
 ) || log "RVM already installed. Skipping..."
 
+
+echo "TODO: Install Chrome the old fashioned way for best reliability. Install 1Password and Slack from App Store."
 
 echo '           ________  _            '
 echo '          |_   __  |(_)           '
