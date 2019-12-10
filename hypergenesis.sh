@@ -18,7 +18,7 @@ rubyVersion='2.0'
 #nodeGlobalModules=(jsontool node-dev express-generator jade bunyan grunt-cli apostrophe-cli ummon)
 
 # Apps to install
-brewCaskInstalls=(spotify alfred transmission fluid virtualbox vagrant dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
+brewCaskInstalls=(spotify alfred dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
 
 #
 #     Functions make things easier!
