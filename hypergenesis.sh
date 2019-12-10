@@ -6,16 +6,16 @@ set -e
 #             Configuration
 # - - - - - - - - - - - - - - - - - - - - - -
 
-brewInstalls=(git grc brew-cask coreutils ack findutils gnu-tar tmux htop-osx ctags nginx gnu-sed nmap tree wget watch phantomjs imagemagick)
+brewInstalls=(git grc brew-cask coreutils ack findutils gnu-tar tmux htop-osx ctags nginx gnu-sed nmap tree wget watch imagemagick terminal-notifier bash-completion)
 
 dotfiles_repo='git@github.com:benirose/dotfiles.git'
 dotfiles_location="$HOME/.dotfiles"
 
-nodeVersion='0.10'
+nodeVersion='8'
 rubyVersion='2.0'
 
 # Node apps to npm install -g
-nodeGlobalModules=(jsontool node-dev express-generator jade bunyan grunt-cli apostrophe-cli ummon)
+#nodeGlobalModules=(jsontool node-dev express-generator jade bunyan grunt-cli apostrophe-cli ummon)
 
 # Apps to install
 brewCaskInstalls=(spotify alfred transmission fluid virtualbox vagrant dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
