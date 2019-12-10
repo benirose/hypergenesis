@@ -85,7 +85,7 @@ echo ""
 [[ ! $(brew tap | grep "caskroom/cask") ]] &&
 (
   log "brew tap $app"
-  brew tap caskroom/cask
+  brew tap homebrew/cask-cask
 )
 
 brew update
