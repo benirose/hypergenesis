@@ -15,7 +15,7 @@ nodeVersion='8'
 rubyVersion='2.0'
 
 # Node apps to npm install -g
-#nodeGlobalModules=(jsontool node-dev express-generator jade bunyan grunt-cli apostrophe-cli ummon)
+nodeGlobalModules=(bunyan ummon)
 
 # Apps to install
 brewCaskInstalls=(spotify alfred dropbox sublime-text firefox vlc qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql)
