@@ -82,11 +82,11 @@ echo ""
   brew doctor
 ) || log "Homebrew already installed. Updating and installing apps"
 
-[[ ! $(brew tap | grep "caskroom/cask") ]] &&
-(
-  log "brew tap $app"
-  brew tap homebrew/cask-cask
-)
+# [[ ! $(brew tap | grep "caskroom/cask") ]] &&
+# (
+#   log "brew tap $app"
+#   brew tap homebrew/cask-cask
+# )
 
 brew update
 
